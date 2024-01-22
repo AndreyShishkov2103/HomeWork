@@ -60,6 +60,6 @@ public class HomeWork3 {
         // task #5
         int x = 3;
         System.out.println("---task #5 result:---");
-        System.out.println(x += x++); // += оператор присваивания сложения, ++ декремент
+        System.out.println(x += x++); // += оператор присваивания сложения, ++ инкремент
     }
 }
