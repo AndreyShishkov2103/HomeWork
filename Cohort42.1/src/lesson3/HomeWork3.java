@@ -59,5 +59,6 @@ public class HomeWork3 {
         int x = 3;
         System.out.println("---task #5 result:---");
         System.out.println(x += x++); // += addition assignment operator, ++ increment
+
     }
 }
