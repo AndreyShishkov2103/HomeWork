@@ -16,7 +16,7 @@ public class HomeWork3 {
         double varD = (double) (a + b + c + d + e + f + g + h + i + j) / 10;
         System.out.println("---task #1 result:---");
         System.out.println("varI (not average): " + varI);
-        System.out.println("varF (average): " + varD);
+        System.out.println("varD (average): " + varD);
 
         // task #2
         int itemA = 1000, itemB = 500;
