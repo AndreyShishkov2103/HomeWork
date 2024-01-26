@@ -1,4 +1,4 @@
-package Lesson5;
+package lesson5;
 
 /**
  * AIT-TR, Java Basic, Lesson #5
