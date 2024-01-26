@@ -1,24 +1,22 @@
 package lesson3;
 
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #3
+ * @Author Andrey Shishkov
+ * @Version 2024-01-22
+ * @Version 2024-01-26 update comments to English
+ */
 public class HomeWork3 {
-    /**
-     * AIT-TR, Java Basic, Cohort42.1, HW #3
-     * @Author Andrey Shishkov
-     * @Version 2024-01-22
-     */
     public static void main(String[] args) {
 
         // task #1
         int a = 0, b = 1, c = 2, d = 3, e = 4, f = 5, g = 6, h = 7, i = 8, j = 9;
         int varI = (a + b + c + d + e + f + g + h + i + j) / 10;
-            /*Если результат суммирования значений переменных, разделенный на 10 записать в int переменную,
-            мы не получим среднее арифмитическое: varI полчит значение без дробной части.
-            Необходимо сделать приведение типов и записать результат в переменную типа float varF.
-            */
-        double varF = (double) (a + b + c + d + e + f + g + h + i + j) / 10;
+        /* We don't receive Average using int variable varI, need transfer to double varD */
+        double varD = (double) (a + b + c + d + e + f + g + h + i + j) / 10;
         System.out.println("---task #1 result:---");
         System.out.println("varI (not average): " + varI);
-        System.out.println("varF (average): " + varF);
+        System.out.println("varF (average): " + varD);
 
         // task #2
         int itemA = 1000, itemB = 500;
@@ -60,6 +58,6 @@ public class HomeWork3 {
         // task #5
         int x = 3;
         System.out.println("---task #5 result:---");
-        System.out.println(x += x++); // += оператор присваивания сложения, ++ декремент
+        System.out.println(x += x++); // += addition assignment operator, ++ increment
     }
 }
