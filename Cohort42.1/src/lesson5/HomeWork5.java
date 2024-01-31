@@ -5,8 +5,8 @@ import java.util.Random;
 
 /**
  * AIT-TR, Java Basic, Cohort42.1, HW #5
- * @Author Andrey Shishkov
- * @Version 2024-01-26
+ * @author Andrey Shishkov
+ * @version 2024-01-26
  */
 public class HomeWork5 {
     public static void main(String[] args) {

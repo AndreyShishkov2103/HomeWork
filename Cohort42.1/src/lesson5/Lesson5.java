@@ -3,7 +3,8 @@ package lesson5;
 import java.util.Random;
 
 /**
- * AIT-TR, Java Basic, Lesson #5
+ * AIT-TR, Cohort 42.1, Java Basic, Lesson #5
+ * @version 2024-01-23
  */
 public class Lesson5 {
     public static void main(String[] args) {

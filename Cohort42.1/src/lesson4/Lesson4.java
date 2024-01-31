@@ -3,7 +3,8 @@ package lesson4;
 import java.util.Scanner;
 
 /**
- * AIT-TR, Java Basic, Lesson #4
+ * AIT-TR, Cohort 42.1, Java Basic, Lesson #4
+ * @version 2024-01-22
  */
 public class Lesson4 {
     public static void main(String[] args) {

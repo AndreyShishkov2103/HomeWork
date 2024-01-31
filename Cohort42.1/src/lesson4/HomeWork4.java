@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * AIT-TR, Java Basic, Cohort42.1, HW #4
- * @Author Andrey Shishkov
- * @Version 2024-01-26
+ * @author Andrey Shishkov
+ * @version 2024-01-26
  */
 public class HomeWork4 {
     public static void main(String[] args) {

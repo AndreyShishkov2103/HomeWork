@@ -2,9 +2,8 @@ package lesson3;
 
 /**
  * AIT-TR, Java Basic, Cohort42.1, HW #3
- * @Author Andrey Shishkov
- * @Version 2024-01-22
- * @Version 2024-01-26 update comments to English
+ * @author Andrey Shishkov
+ * @version 2024-01-26 update comments to English
  */
 public class HomeWork3 {
     public static void main(String[] args) {
