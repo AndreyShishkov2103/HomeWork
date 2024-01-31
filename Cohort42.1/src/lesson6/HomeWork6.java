@@ -81,6 +81,6 @@ public class HomeWork6 {
             word = scanner1.nextLine();
         } while (!word.equalsIgnoreCase("hello"));
         System.out.println("You entered right word using " + count + " attempts");
-        
+
     }
 }
