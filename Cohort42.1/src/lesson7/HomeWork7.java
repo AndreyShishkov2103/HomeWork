@@ -44,7 +44,7 @@ public class HomeWork7 {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         do {
-            double targetDist = random.nextInt(20000), angle, speed, range, affectedArea = 15.0, g =9.81;
+            double targetDist = random.nextInt(1000), angle, speed, range, affectedArea = 10.0, g =9.81;
             int count = 0;
             System.out.println("You need to hit the target at " + targetDist + " m. You have 5 attempts.");
             System.out.println("Affected area, 15.0 m");
