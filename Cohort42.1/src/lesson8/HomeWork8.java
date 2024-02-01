@@ -1,0 +1,106 @@
+package lesson8;
+
+import java.util.Arrays;
+import java.util.Random;
+
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #8
+ * @author Andrey Shishkov
+ * @version 2024-01-31
+ */
+public class HomeWork8 {
+    public static void main(String[] args) {
+
+        // task #1
+
+        System.out.println("---task #1---");
+
+        for (int i = 1; i < 11; i++) {
+            System.out.println("Task" + i);
+        }
+
+        // task #2
+
+        System.out.println("---task #2---");
+        int[] array = {10, 14, 15, 33, 70, 55, 44, 1, -10, 85, 42, 18, 20, 31, 61, 62, 75, 90, -25, 95};
+        System.out.print(Arrays.toString(array));
+        System.out.print("\nArray numbers multiples of 5:\n");
+
+        for (int i : array) {
+            if (i % 5 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+        // task #3
+
+        System.out.println();
+        System.out.print("---task #3---");
+        String[] words = {"Red", "Orange", "Yellow", "Green", "Blue", "Magenta"};
+        int maxLength = 0;
+        String longestWord = "";
+
+        // loop finding the longest word in string array
+        for (String word : words) {
+            if (word.length() > maxLength) {
+                maxLength = word.length();
+                longestWord = word;
+            }
+        }
+        System.out.println();
+
+        // using the toCharArray() method we converted String variable longestWord into an array of chars
+        char [] result = longestWord.toCharArray();
+
+        // loop printing each symbol of longest word from new line
+        for (char c : result) {
+            System.out.println(c);
+        }
+
+        // task #4
+
+        System.out.println("---task #4---");
+        int[] numbs = new int[10];
+        Random num = new Random();
+
+        for (int i = 0; i < numbs.length; i++) {
+            numbs[i] = num.nextInt(10);
+            System.out.print(numbs[i] + " ");
+        }
+
+        // min
+        int min = numbs[0];
+        for (int i = 0; i < numbs.length; i++) {
+            if (min > numbs[i]) {
+                min = numbs[i];
+            }
+        }
+        System.out.println();
+        System.out.println("Min is: " + min);
+
+        // max
+        int max = numbs[0];
+        for (int i = 0; i < numbs.length; i++) {
+            if (max < numbs[i]) {
+                max = numbs[i];
+            }
+        }
+        System.out.println("Max is: " + max);
+
+        // average
+        double average = 0;
+        for (int i = 0; i < numbs.length; i++) {
+            average += (double) numbs[i] / numbs.length;
+            }
+        System.out.println("Avg is: " + average);
+
+        // task #5
+
+//        System.out.println();
+//        System.out.println("---task #5---");
+//        String str = "16+23-1+8";
+//        char[] charArray = str.toCharArray();
+//        System.out.println(Arrays.toString(charArray));
+
+    }
+}
