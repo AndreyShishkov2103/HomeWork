@@ -4,10 +4,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * AIT-TR, Cohort 42.1, Java Basic, Lesson #11
- * @version 2024-02-07
+ * AIT-TR, Java Basic, Cohort42.1, HW #11
+ * @author Andrey Shishkov
+ * @version 2024-02-09
  */
-public class TicTakToe {
+public class HomeWork11 {
 
     static char[][] table = new char[3][3];
     static Scanner scanner = new Scanner(System.in);
@@ -98,10 +99,8 @@ public class TicTakToe {
 
 
     static boolean isWin(char chr) {
-        for (int i = 0; i < 3; i++) {
-            if (table[i][0] == chr && table[i][1] == chr && table[i][2] == chr) return true;    // by X
-            if (table[0][i] == chr && table[1][i] == chr && table[2][i] == chr) return true;    // by Y
-        }
+
+
         // diagonals
         if (table[0][0] == chr && table[1][1] == chr && table[2][2] == chr) return true;
         if (table[0][2] == chr && table[1][1] == chr && table[2][0] == chr) return true;
