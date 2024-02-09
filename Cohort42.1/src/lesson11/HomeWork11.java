@@ -100,7 +100,10 @@ public class HomeWork11 {
 
     static boolean isWin(char chr) {
 
-
+        for (int i = 0; i < 3; i++) {
+            if (table[i][0] == chr && table[i][1] == chr && table[i][2] == chr) return true;    // by X
+            if (table[0][i] == chr && table[1][i] == chr && table[2][i] == chr) return true;    // by Y
+        }
         // diagonals
         if (table[0][0] == chr && table[1][1] == chr && table[2][2] == chr) return true;
         if (table[0][2] == chr && table[1][1] == chr && table[2][0] == chr) return true;
