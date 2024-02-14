@@ -25,6 +25,6 @@ public class HomeWork13 {
 
         startTime = System.currentTimeMillis();
         HomeWork12.binarySearch(array, 45);
-        System.out.println((System.currentTimeMillis() - startTime) + " ms - ");
+        System.out.println((System.currentTimeMillis() - startTime) + " ms - binary search");
     }
 }
