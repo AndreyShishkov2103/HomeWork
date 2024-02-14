@@ -2,7 +2,6 @@ package lesson13;
 
 import lesson12.HomeWork12;
 
-
 /**
  * AIT-TR, Cohort 42.1, Java Basic, Lesson #13
  * @version 2024-02-12
