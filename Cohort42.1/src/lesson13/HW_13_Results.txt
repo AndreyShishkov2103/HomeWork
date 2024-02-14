@@ -11,7 +11,7 @@
 
 3 ms - create array
 0 ms - linear search
-1892 ms - selection sort
+1892 ms - selection sort O(n2)
 0 ms - binary search
 
 Process finished with exit code 0
