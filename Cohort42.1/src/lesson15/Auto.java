@@ -5,12 +5,12 @@ package lesson15;
  * @author Andrey Shishkov
  * @version 2024-02-23
  */
-public class Car {
+public class Auto {
     double fuel;
     double fuelVolume;
     boolean engineON;
 
-    public Car(double fuel, double fuelVolume) {
+    public Auto(double fuel, double fuelVolume) {
         this.fuel = fuel;
         this.fuelVolume = fuelVolume;
         this.engineON = false;

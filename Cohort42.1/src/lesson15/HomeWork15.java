@@ -27,7 +27,7 @@ public class HomeWork15 {
         System.out.println(carRide.ridePrice() + " EUR");
         System.out.println("The Car");
 
-        Car car = new Car(5, 50);
+        Auto car = new Auto(5, 50);
         if (car.startEngine()) {
             System.out.println("Drive: " + car.drive(50));
             System.out.println("Fuel: " + car.fuel);
