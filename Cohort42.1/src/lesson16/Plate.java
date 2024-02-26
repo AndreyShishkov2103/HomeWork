@@ -1,5 +1,9 @@
 package lesson16;
 
+/**
+ * AIT-TR, Cohort 42.1, Java Basic, Lesson #16
+ * @version 2024-02-19
+ */
 public class Plate {
 
     int capacity;
