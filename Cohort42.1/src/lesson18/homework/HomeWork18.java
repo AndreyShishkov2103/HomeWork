@@ -1,5 +1,10 @@
 package lesson18.homework;
 
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #18
+ * @author Andrey Shishkov
+ * @version 2024-02-26
+ */
 public class HomeWork18 {
     public static void main(String[] args) {
         // task #1
