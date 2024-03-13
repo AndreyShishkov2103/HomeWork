@@ -11,7 +11,7 @@ public class Lesson24 {
         Connection connection = DriverManager.getConnection("jdbc:sqlite:C:/Users/Тиран/HomeWork/Cohort42.1mvn/demobase.db");
         Statement stmt = connection.createStatement();
 
-        //add("Muzafar", "cohort41", stmt);
+        // add("Muzafar", "cohort41", stmt);
         read(stmt);
 
         // CRUD - create, read, update, delete
@@ -38,6 +38,6 @@ public class Lesson24 {
     }
 
     static void delete(int id, Statement stmt) {
-        // TODO implemen delete by id
+        // TODO implement delete by id
     }
 }
