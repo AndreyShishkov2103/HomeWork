@@ -15,6 +15,10 @@ public class Horse {
         System.out.println("walk...");
     }
 
+    public void hidden() {
+        System.out.println("horse hidden...");
+    }
+
     @Override
     public String toString() {
         return "{" +
