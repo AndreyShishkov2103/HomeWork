@@ -1,5 +1,7 @@
 package lesson23;
 
+import lesson22.TriangleRectangle;
+
 /**
  * AIT-TR, Cohort 42.1, Java Basic, Lesson #23
  * @version 2024-03-06
@@ -11,15 +13,22 @@ public class Lesson23 {
         System.out.println(lesson23);
         // hashCode()
         System.out.println(Integer.toHexString(lesson23.hashCode()));
-        // getClass()
+        // getClass
         System.out.println(lesson23.getClass().getSimpleName());
-        // equals()
+        // equals
         lesson23.equals(lesson23);
         String s1 = "qwerty";
         String s2 = "qwerty";
         String s3 = "qwert";
+        s2 = s3 + "y";
         System.out.println(s1.equals(s2));
-        System.out.println(s1.equals(s3));
+        System.out.println(s1 == s3);
+
+        TriangleRectangle tr1 = new TriangleRectangle(4, 6);
+        TriangleRectangle tr2 = new TriangleRectangle(4, 6);
+        System.out.println("triangles: " + tr1.equals(tr2));
+
+        // notify, notifyAll, wait - multithreading
     }
 
     @Override
