@@ -14,26 +14,37 @@ import java.awt.GridLayout;
 import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Random;
 
-class Lesson31 extends JFrame {
-
-    private Random random = new Random();
-    private final Color[] COLORS = {Color.red, Color.green, Color.blue};
+public class Lesson31 extends JFrame {
+    private Random random;
+    private final Color[] COLORS = {Color.red, Color.green, Color.blue, Color.yellow, Color.magenta};
     private int CIRCLE_COUNT = 100;
 
     public static void main(String[] args) {
-        new Lesson31(); // create window object
+        new Lesson31();
     }
 
-    public Lesson31() {
-        setTitle("Hello, Swing!");  // window header
-        setDefaultCloseOperation(EXIT_ON_CLOSE); // on close
-        setSize(500, 500); // window size
-        setLocationRelativeTo(null); // screen position
+    public Lesson31()  {
+        setTitle("Hello, Swing!");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(500, 500);
+        setLocationRelativeTo(null);
+
+        random = new Random();
 
         Canvas canvas = new Canvas();
         canvas.setBackground(Color.white);
+        canvas.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                System.out.println(e.getX() + ", " + e.getY());
+                canvas.repaint();
+            }
+        });
 
         JButton btnDraw = new JButton("Draw");
         JButton btnExit = new JButton("Exit");
@@ -55,10 +66,10 @@ class Lesson31 extends JFrame {
         add(btnPanel, BorderLayout.SOUTH);
         add(canvas, BorderLayout.CENTER);
 
-        setVisible(true); // set visible
+        setVisible(true);
     }
 
-    public class Canvas extends JPanel {
+    private class Canvas extends JPanel {
         @Override
         public void paint(Graphics g) {
             super.paint(g);
