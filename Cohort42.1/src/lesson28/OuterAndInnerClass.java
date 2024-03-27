@@ -4,7 +4,7 @@ public class OuterAndInnerClass {
     private String field = "field";
 
     private void printText() {
-        System.out.println("private method print text.");
+        System.out.println("private method print Text.");
     }
 
     public void useInnerClass() {
@@ -14,11 +14,11 @@ public class OuterAndInnerClass {
     }
 
     class InnerClass {
-        private  String getField() {
+        String getField() {
             return field;
         }
 
-        private void innerPrintText() {
+        void innerPrintText() {
             printText();
         }
     }
