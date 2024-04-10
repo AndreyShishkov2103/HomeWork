@@ -8,6 +8,8 @@ import java.util.List;
  * AIT-TR, Java Basic, Cohort42.1, HW #33
  * @author Andrey Shishkov
  * @version 2024-04-05
+ * Задача 1. Написать метод, принимающий (в параметрах) два списка, реализующих интерфейс List.
+ *           Метод должен возвращать список из значений, присутствующих в обоих коллекциях.
  */
 public class HomeWork33 {
     public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class HomeWork33 {
         List<Integer> listThree = new ArrayList<>(Arrays.asList(6, 7, 8, 9, 0));
 
         System.out.println(GetInterSectionOfLists(listOne, listTwo));
-        System.out.println(GetInterSectionOfLists(listTwo, listThree));
+        System.out.println(GetInterSectionOfLists(listOne, listThree));
     }
 
     static <T> List<T> GetInterSectionOfLists(List<T> listOne, List<T> listTwo) {
