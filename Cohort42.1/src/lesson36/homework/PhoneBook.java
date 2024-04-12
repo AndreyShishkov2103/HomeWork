@@ -23,4 +23,8 @@ public class PhoneBook {
         return pb.get(name);
     }
 
+    @Override
+    public String toString() {
+        return pb.toString();
+    }
 }
