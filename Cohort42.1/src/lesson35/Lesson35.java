@@ -2,7 +2,11 @@ package lesson35;
 
 import lesson34.Person;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * AIT-TR, Cohort 42.1, Java Basic, Lesson #35
